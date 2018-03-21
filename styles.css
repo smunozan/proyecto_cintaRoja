@@ -3,8 +3,8 @@
 	margin: 3%;
 }
 
-.sinDecoracion{
-	text-decoration: none;
+.tamano{
+	height: 500px;
 }
 
 /*Opciones generales*/
@@ -19,9 +19,14 @@
 
 .pantallaDatos{
 	padding-left: 0px!important;
+
 }
 
 /*nombres pacientes*/
+
+#pacientes{
+	display: none;
+}
 
 .cuadroNombre{
 	width: 70%;
@@ -43,7 +48,7 @@
 	align-items: center;
 }
 
-.btn{
+.botonOpcion button{
 	width: 100%;
 	height: 100%
 }
@@ -52,13 +57,56 @@
 	border: 1px solid;
 }
 
-/*campo de informacion*/
+/*campo de informacion (pantallaDatos)*/
 
-#sinSeleccion{
+/*mi perfil*/
+#miPerfil{
 	width: 100%;
 	height: 100%;
 	border: 1px solid;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;	
+}
+
+.fotoPerfil{
+	border-radius: 50%;
+	border:1px solid;
+	height: 200px;
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.centrarPerfil{
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.centrarPerfil h5{
+	font-weight: 100;
+}
+
+.centrarPerfil input{
+	font-weight: 600;
+	text-align: center;
+}
+
+.cambiosPerfil{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+/*pacientes*/
+#sinSeleccionPaciente{
+	width: 100%;
+	height: 100%;
+	border: 0.5px solid;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;

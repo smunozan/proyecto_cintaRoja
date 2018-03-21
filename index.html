@@ -12,40 +12,49 @@
   </head>
   <body>
     <div class="main">
-      <div class="row">
-        <div class="col-3">
-          <a href="" class="sinDecoracion">
-            <div class="row indiceOpciones" onclick=" perfilDR()">
+      <div class="row ">
+
+        <!--  -->
+        <div class="col-3 tamano">
+            <div class="row indiceOpciones" id="selectPerfil" onclick=" perfilDR()">
               <div id="perfilDR">
                 <h3 >Mi perfil</h3>
               </div>
             </div>
-          </a>
-          <a href="" class="sinDecoracion">
-            <div class="row indiceOpciones">
-              <div id="perfilDR">
+
+            <div class="row indiceOpciones" id="selectPacientes" onclick=" opcionPacientes()">
+              <div id="opcionPacientes">
                 <h3 >Pacientes</h3>
               </div>
             </div>
-          </a>
-          <a href="" class="sinDecoracion">
-            <div class="row indiceOpciones">
-              <div id="perfilDR">
+            <div class="row indiceOpciones" id="selectDietas" onclick=" opcionDietas()">
+              <div id="opcionDietas">
                 <h3 >Dietas</h3>
               </div>
             </div>
-          </a>
         </div>
 
+        <!--  -->
+
         <div class="col-3" id="pacientes"></div>
+
+        <!-- -->
           
         <div class="col pantallaDatos">
-          <div id="sinSeleccion">
+
+          <div id="miPerfil"></div>
+
+          <div id="sinSeleccionPaciente">
             <h2>Selecciona un paciente</h2>
             <h4>Recuerda, los pacientes en:</h5>
             <h6><span class="amarillo">AMARILLO</span> no han respondido 3 días</h6>
             <h6><span class="rojo">ROJO</span> no han respondido 7 días</h6>
           </div>
+
+          <div id="dietas">
+            
+          </div>
+
         </div>
       </div>
 
